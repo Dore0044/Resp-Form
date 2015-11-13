@@ -5,26 +5,70 @@ body {
 .masthead {
     font-family: 'Rokkitt', serif;
 }
+
 .box {
     font-family: 'Raleway', sans-serif;
     background-color: #51CF13;
+    font-size: 18px;
+}
+
+input[type=submit] {
+    width: 6.5em;
+    font-weight: 700;
 }
 
 input {
     background-color: #9EF57E;
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
 }
 
-@media screen and (min-width: 40em) and (max-width: 80em) {
-    .box {
-       
-    }
-}
-
-@media screen and (min-width: 80em) {
+@media screen and (max-width: 45em) {
     label {
-        
+        font-size: 0; 
     }
     .box {
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        display: table;
+        width: 95%;
+    }
+    input {
+        width: 97%;
+    }
+}
+
+@media screen and (min-width: 45em) and (max-width: 85em) {
+    .masthead {
+        font-size: 1.3em;
+        text-align: center;
+    }
+    .box {
+        display: inline-block;
         float: left;
+        width: 50%;
+    }
+    label {
+        display: block;
+    }
+    input[type=submit] {
+        position: fixed;
+        margin-top: 25px;
+    }
+}
+
+@media screen and (min-width: 85em) {
+    .masthead {
+        font-size: 1.5em;
+        text-align: center;
+    }
+    .box {
+        display: inline-block;
+        width: 35%;
+    }
+    input[type=submit] {
+        position: relative;
+        top: 25px;
+        left: -270px;
     }
 }
